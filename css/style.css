@@ -1,0 +1,100 @@
+/* ==========================================
+   CÀI ĐẶT CHUNG VÀ BỐ CỤC TỔNG THỂ (GRID)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Sử dụng CSS Grid cho bố cục tổng thể của trang */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   PHẦN CỦA THÀNH VIÊN A: HEADER VÀ FOOTER
+   ========================================== */
+
+/* Header Styles */
+.header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.header .nav-menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.header .nav-menu a:hover {
+    color: #e74c3c;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer .social-links {
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive cho Header & Footer (Thành viên A) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .header .nav-menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* ==========================================
+   PHẦN CỦA THÀNH VIÊN B: MAIN CONTENT (PROJECT GALLERY)
+   ========================================== */
+
+/* THÀNH VIÊN B: Hãy viết CSS cho phần .main-content và .project-gallery tại đây. 
+   Yêu cầu: Sử dụng CSS Grid để sắp xếp 6 items của .project-gallery có kích thước bằng nhau. */
+   
